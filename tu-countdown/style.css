@@ -56,6 +56,29 @@ body {
     font-size: 2em;
 }
 
+#progress-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #0056b3;
+            border-radius: 10px;
+            padding: 3px;
+        }
+
+        #progress-bar {
+            width: 10%;
+            height: 20px;
+            background-color: #007bff;
+            border-radius: 8px;
+            transition: width 0.5s ease;
+        }
+
+        #progress-text {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
 @media (max-width: 768px) {
     #countdown-container {
         flex-direction: column;
