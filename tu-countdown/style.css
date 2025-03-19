@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#countdown-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#stadium-image {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#countdown {
+    text-align: center;
+    flex: 1;
+}
+
+#countdown h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1em;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    #countdown-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #stadium-image {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    #timer {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .time-box {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .time-box span {
+        font-size: 1.5em;
+    }
+}
